@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS HW2 Oblig</title>
+
+    <style>
+        .leftblock{
+            background: rgb(204, 203, 203);
+            color: black;
+            height: 383px;
+            width: 240px;
+            float: left;
+            overflow: auto;
+        }
+        .undercenter{
+            background: rgb(172, 172, 172);
+            color: black;
+            height: 230px;
+            width: 600px;
+            float: left;
+            margin-bottom: 3px;
+            overflow: auto;
+
+        }
+        .centerblock{
+            background: rgb(172, 172, 172);
+            color: black;
+            height: 150px;
+            width: 840px;
+            margin-bottom: 3px;
+
+        }
+        .footer{
+            background: rgb(204, 204, 204);
+            color: black;
+            width: 840px;
+            clear: both;
+        
+        }
+        .image{
+            max-width: 100px;
+            max-width: 70px;
+            float: right;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+   <div class="leftblock"><strong>Блок навигации</strong>
+        <ul>
+            <li>Ширина 15ем</li>
+            <li>Должен присутствовать цвет фона</li>
+            <li>Располагается слева</li>
+            <li>Блок навигации наполните контеном достаточным, чтобы по высоте он начинал захватывать вторую статью, как показано в данном примере</li>
+        </ul>
+    </div>
+    <div class="centerblock"><strong>Cтатья 1</strong>
+    <p>Размер блока:<br>
+    Занимает всю доступную ширину<br>
+    Должен присутствовать цвет фона<br>
+    Во всех "статьях" сделайте отступ снизу от соседей равным .2ем, при помощи свойства margin-bottom.</p>
+    </div>
+    <div class="undercenter"><strong>Cтатья 2</strong>
+    <p>Размер блока:<br>
+       Занимает всю доступную ширину<br>
+       Должен присутствовать цвет фона<br>
+       Во всех "статьях" сделайте отступ снизу от соседей равным .2ем, при помощи свойства margin-bottom. Картинка вставлена при помоще тега, плавание организовано по правому краю внутри данной статьи для этой картинки</p>
+    <img class="image" src="Mail_logo1.png">
+    </div>
+    <div class="footer">
+        <p>Нижний блок, подвал. Занимает всю доступную ширину. Высота определяется помещенным внутрь контеном</p>
+    </div>
+</div>
+    
+</body>
+</html>
