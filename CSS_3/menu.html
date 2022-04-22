@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>MenuWeekBar</title>
+    <style>
+      #weekbar ul{
+        display: none;
+        background-color: rgb(155, 151, 151);;
+        position: absolute;
+        top: 100%;
+      }
+      #weekbar li:hover ul { display: block; }
+      #weekbar, #weekbar ul{
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+      }
+      #weekbar {
+        height: 30px;
+        background-color: rgb(155, 151, 151);
+        padding-left: 10px;
+        max-width: 700px;
+      }
+      #weekbar li {
+        float: left;
+        position: relative;
+        height: 100%;
+      }
+      #weekbar li a {
+        display: block;
+        padding: 6px;
+        width: 100px;
+        color: #fff;
+        text-decoration: none;
+        text-align: center;
+      }
+      #weekbar ul li { float: none; }
+      #weekbar li:hover { background-color: #666; }
+      #weekbar ul li:hover { background-color: rgb(155, 151, 151);; }
+    </style>
+  </head>
+ 
+  <body>
+  
+    <ul id="weekbar">
+      <li><a href="#">Понедельник</a></li>
+      <li><a href="#">Вторник</a></li>
+      <li><a href="#">Среда</a>
+        <ul>
+          <li><a href="#">Завтрак</a></li>
+          <li><a href="#">Обед</a></li>
+          <li><a href="#">Ужин</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Четверг</a></li>
+      <li><a href="#">Пятница</a></li>
+      <li><a href="#">Суббота</a></li>
+    </ul>
+  </body>
+</html>
