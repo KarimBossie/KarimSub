@@ -5,6 +5,9 @@
     <title>CSS HW3 Blocks</title>
 
     <style>
+        .fullblock {
+            min-width: 550px;
+        }
         .blocktotheleft {
             width: 15em;
             height:20.4em;
@@ -31,6 +34,7 @@
             color: rgb(0, 0, 0);;
             width: 65em;
             clear: both;
+            margin-bottom: 5px;
         }
         .image{
             max-width: 100px;
@@ -39,9 +43,11 @@
             clear: both;
         }
     </style>
+
 </head>
 <body>
-   <div class="blocktotheleft"><b>Блок навигации</b>
+    <div class="fullblock">
+        <div class="blocktotheleft"><b>Блок навигации</b>
         <ul>
             <li>Ширина 15ем</li>
             <li>Должен присутствовать цвет фона</li>
@@ -65,6 +71,7 @@
     <div class="footer">
         <p>Нижний блок, подвал. Занимает всю доступную ширину. Высота определяется помещенным внутрь контеном</p>
     </div>
+</div>
 </div>
     
 </body>
