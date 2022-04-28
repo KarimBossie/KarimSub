@@ -1,78 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>CSS HW3 Blocks</title>
-
     <style>
-        .fullblock {
-            min-width: 550px;
-        }
-        .blocktotheleft {
-            width: 15em;
-            height:20.4em;
-            float: left;
-            color: rgb(0, 0, 0);
-            background-color: rgb(200, 200, 200);
-        }
-        .banner {
-            background-color: rgb(128, 128, 128);
-            color: rgb(0, 0, 0);
-            float: left;
-            width: 50em;
-            margin-bottom: 0.2em;
-        }
-        .main {
-            background-color: rgb(128, 128, 128);
-            color: rgb(0, 0, 0);
-            float: left;
-            width: 50em;
 
-        }
-        .footer{
-            background: rgb(200, 200, 200);
-            color: rgb(0, 0, 0);;
-            width: 65em;
-            clear: both;
-            margin-bottom: 5px;
-        }
-        .image{
-            max-width: 100px;
-            max-width: 70px;
-            float: right;
-            clear: both;
-        }
-    </style>
+.container {
+background-color: rgb(255, 255, 255);
+width: 80em;
+overflow-y: auto;
+}
+.navblock {
+width: 15em;
+float: left;
+color: black;
+background-color: rgb(206, 206, 206);
+overflow-y: auto;
+}
+.art {
+background-color: rgb(128, 128, 128);
+color: black;
+float: left;
+width: 65em;
+margin-bottom: .2em;
+overflow-y: auto;
+}
+.image {
+max-width: 100px;
+max-width: 70px;
+float: right;
+clear: both;
+}
+.footer {
+background-color: rgb(200, 200, 200);
+clear: both;
+overflow-y: auto;
+}
+</style>
 
-</head>
-<body>
-    <div class="fullblock">
-        <div class="blocktotheleft"><b>Блок навигации</b>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navblock">
+        <h3>Блок навигации</h3>
         <ul>
-            <li>Ширина 15ем</li>
-            <li>Должен присутствовать цвет фона</li>
-            <li>Располагается слева</li>
-            <li>Блок навигации наполните контеном достаточным, чтобы по высоте он начинал захватывать вторую статью, как показано в данном примере</li>
+          <li>Ширина 15em</li>
+          <li>Должен присутствоать цвет фона</li>
+          <li>Располагается слева</li>
+          <li>Блок навигации наполните контеном достаточным, чтобы по высоте он начинал захватывать вторую статью, как показано в данном примере</li>
         </ul>
+      </div>
+      <div class="art">
+        <b>Статья 1</b>
+        <ul>
+          <li style="list-style-type:none">Занимает всю доступную ширину</li>
+          <li style="list-style-type:none">Должен присутствоать цвет фона</li>
+          <li style="list-style-type:none">Во всех "статьях" сделайте отступ снизу от соседей равным .2ем, при помощи свойства margin-bottom.</li>
+        </ul>
+      </div>
+      <div class="art">
+        <b>Статья 2</b>
+        <ul>
+          <li style="list-style-type:none">Размер блока:</li>
+            <li style="list-style-type:none">Занимает всю доступную ширину</li>
+            <li style="list-style-type:none">Должен присутствовать цвет фона</li>
+            <li style="list-style-type:none">Во всех "статьях" сделайте отступ снизу от соседей равным .2ем, при помощи свойства margin-bottom. Картинка вставлена при помоще тега, плавание организовано по правому краю внутри данной статьи для этой картинки</li>
+          </li>
+          <img class="image" src="Mail_logo1.png">
+        </ul>
+      </div>
+      <div class="footer">
+      <p> Нижний блок, подвал. Занимает всю доступную ширину. Высота определяется помещенным внутрь контентом.</p>
     </div>
-    <div class="banner"><b>Cтатья 1</b>
-    <p>Размер блока:<br>
-    Занимает всю доступную ширину<br>
-    Должен присутствовать цвет фона<br>
-    Во всех "статьях" сделайте отступ снизу от соседей равным .2ем, при помощи свойства margin-bottom.</p>
-    </div>
-    <div class="main"><b>Cтатья 2</b>
-    <p>Размер блока:<br>
-       Занимает всю доступную ширину<br>
-       Должен присутствовать цвет фона<br>
-       Во всех "статьях" сделайте отступ снизу от соседей равным .2ем, при помощи свойства margin-bottom. Картинка вставлена при помоще тега, плавание организовано по правому краю внутри данной статьи для этой картинки</p>
-    <img class="image" src="Mail_logo1.png">
-    </div>
-    <div class="footer">
-        <p>Нижний блок, подвал. Занимает всю доступную ширину. Высота определяется помещенным внутрь контеном</p>
-    </div>
-</div>
-</div>
-    
-</body>
+  </body>
 </html>

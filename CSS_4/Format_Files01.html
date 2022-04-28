@@ -22,8 +22,38 @@
 .list{
     list-style-type: none;
     padding:0%
-
   }
+  li {
+        display: flex;
+        align-items: center;
+      }
+      .msword-img {
+        display: none;
+      }
+      li:hover .msword-img {
+        display: inline;
+      }
+      span:hover .msword-img {
+        display: inline;
+      }
+      .adobe-img {
+        display: none;
+      }
+      li:hover .adobe-img {
+        display: inline;
+      }
+      span:hover .adobe-img {
+        display: inline;
+      }
+      .zip-img {
+        display: none;
+      }
+      li:hover .zip-img {
+        display: inline;
+      }
+      span:hover .zip-img {
+        display: inline;
+      }
   </style>
 
 </head>
@@ -54,9 +84,21 @@
     </div>
     <h2>Это список файлов</h2>
     <ul class="list">
-        <li class="file"><a href="msword.jpeg">Документ MS Word</a></li>
-        <li class="file"><a href="adobe.png">Документ PDF</a></li>
-        <li class="file"><a href="zip.gif">Архив</a></li>
-    </ul>  
+        <li>
+          <img src="file.jpeg" />
+          <a href="https://www.microsoft.com" class="text">Document MS Word</a>
+          <img class="msword-img" src="msword.jpeg" />
+        </li>
+        <li>
+          <img src="file.jpeg" /><a href="https://www.adobe.com" target="blanc"
+            >Document PDF</a
+          ><img class="adobe-img" src="adobe.png" />
+        </li>
+        <li>
+          <img src="file.jpeg" /><a href="https://www.7-zip.org" target="blanc"
+            >Архив</a
+          ><img class="zip-img" src="zip.gif" />
+        </li>
+      </ul>
 </body>
 </html>
