@@ -1,69 +1,135 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
     <title>MenuWeekBar</title>
-    <style>
-      #weekbar ul{
-        display: none;
-        background-color: rgb(155, 151, 151);;
-        position: absolute;
-        top: 100%;
-      }
-      #weekbar li:hover ul { display: block; }
-      #weekbar, #weekbar ul{
-        margin: 0;
-        padding: 0;
-        list-style-type: none;
-      }
-      #weekbar {
-        height: 30px;
-        background-color: rgb(155, 151, 151);
-        padding-left: 10px;
-        max-width: 700px;
-      }
-      #weekbar li {
-        float: left;
-        position: relative;
-        height: 100%;
-      }
-      #weekbar li a {
-        display: block;
-        padding: 6px;
-        width: 100px;
-        color: #fff;
-        text-decoration: none;
-        text-align: center;
-      }
 
-      @media all and (max-width: 776px) {
-    .weekbar {
-        float: none;
+<style>
+    .MenuWeekBar {
+        overflow: hidden;
+
       }
       
-      #weekbar ul li { float: none; }
-      #weekbar li:hover { background-color: #666; }
-      #weekbar ul li:hover { background-color: rgb(155, 151, 151);; }      
+      .Drop {
+        float: left;
+        overflow: hidden;
+        width: 120px;
+        background-color:rgb(150, 150, 150);
+        border-style: dotted;
+        border-width: 3px;
+      }
+      
+      .Drop .button{
 
-    }
-    </style>
-  </head>
- 
-  <body>
-  
-    <ul id="weekbar">
-      <li><a href="#">Понедельник</a></li>
-      <li><a href="#">Вторник</a></li>
-      <li><a href="#">Среда</a>
-        <ul>
-          <li><a href="#">Завтрак</a></li>
-          <li><a href="#">Обед</a></li>
-          <li><a href="#">Ужин</a></li>
-        </ul>
-      </li>
-      <li><a href="#">Четверг</a></li>
-      <li><a href="#">Пятница</a></li>
-      <li><a href="#">Суббота</a></li>
-    </ul>
-  </body>
+        border-style: dotted;
+        border: black;
+        outline: none;
+        font-size: 18px;
+        background-color:rgb(150, 150, 150);
+        font-family: 'Times New Roman', Times, serif; 
+        margin: 0; 
+      }
+      
+      .MenuWeekBar a:hover, .Drop:hover .button {
+        background-color: rgb(150, 150, 150);
+       
+      }
+      
+      .contentoftheweek {
+        display: none;
+        position: absolute;
+        min-width: 125px;
+        z-index: 1;
+    
+      }
+       
+      .contentoftheweek a {
+        float: none;
+        color: black;
+        background-color:rgb(150, 150, 150);
+        border-style: dotted;
+        border-radius: 10px;
+        padding: 3px 3px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+        
+      }
+      
+      .contentoftheweek a:hover {
+        background-color: rgb(61, 59, 59);
+      }
+      
+      .Drop:hover .contentoftheweek {
+        display: block;
+      }
+    
+      .Drop:hover{
+          background-color: rgb(150, 150, 150);
+        }
+      
+      @media (max-width: 800px) {
+        .Drop {
+            float: none;
+            overflow: hidden;
+            background-color:rgb(150, 150, 150);
+            border-style: dotted;
+            border-width: 2px;
+            border-radius: 10px;
+          }
+        }
+</style>
+</head>
+<body>
+    <div class="MenuWeekBar">
+        <div class="Drop">
+            <button class="button">Понедельник</button>
+            <div class="contentoftheweek">
+                <a href="">Завтрак </a>
+                <a href="">Обед</a>
+                <a href="">Ужин</a>
+            </div>
+        </div>
+          <div class="Drop">
+            <button class="button">Вторник</button>
+            <div class="contentoftheweek">
+              <a href="">Завтрак </a>
+              <a href="">Обед</a>
+              <a href="">Ужин</a>
+            </div>
+        </div>
+        <div class="Drop">
+            <button class="button">Среда</button>
+            <div class="contentoftheweek">
+                <a href="">Завтрак </a>
+                <a href="">Обед</a>
+                <a href="">Ужин</a>
+            </div>
+        </div>
+        <div class="Drop">
+            <button class="button">Четверг</button>
+            <div class="contentoftheweek">
+                <a href="#">Завтрак </a>
+                <a href="#">Обед</a>
+                <a href="#">Ужин</a>
+            </div>
+        </div>
+          <div class="Drop">
+            <button class="button">Пятница</button>
+            <div class="contentoftheweek">
+              <a href="">Завтрак </a>
+              <a href="">Обед</a>
+              <a href="">Ужин</a>
+            </div>
+        </div>
+        <div class="Drop">
+            <button class="button">Суббота</button>
+            <div class="contentoftheweek">
+                <a href="">Завтрак </a>
+                <a href="">Обед</a>
+                <a href="">Ужин</a>
+            </div>
+        </div>
+    </div>
+</body>
 </html>
