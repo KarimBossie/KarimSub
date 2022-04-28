@@ -7,11 +7,12 @@
 
 .container {
 background-color: rgb(255, 255, 255);
-width: 80em;
-overflow-y: auto;
+max-height: 100px;
+
 }
 .navblock {
 width: 15em;
+height: 318px;
 float: left;
 color: black;
 background-color: rgb(206, 206, 206);
@@ -20,21 +21,22 @@ overflow-y: auto;
 .art {
 background-color: rgb(128, 128, 128);
 color: black;
-float: left;
-width: 65em;
 margin-bottom: .2em;
-overflow-y: auto;
+overflow: auto;
+height: 157px;
 }
+
 .image {
 max-width: 100px;
 max-width: 70px;
 float: right;
 clear: both;
+
 }
 .footer {
 background-color: rgb(200, 200, 200);
 clear: both;
-overflow-y: auto;
+overflow: auto;
 }
 </style>
 
@@ -63,14 +65,13 @@ overflow-y: auto;
         <ul>
           <li style="list-style-type:none">Размер блока:</li>
             <li style="list-style-type:none">Занимает всю доступную ширину</li>
-            <li style="list-style-type:none">Должен присутствовать цвет фона</li>
-            <li style="list-style-type:none">Во всех "статьях" сделайте отступ снизу от соседей равным .2ем, при помощи свойства margin-bottom. Картинка вставлена при помоще тега, плавание организовано по правому краю внутри данной статьи для этой картинки</li>
-          </li>
-          <img class="image" src="Mail_logo1.png">
+            <li style="list-style-type:none">Должен присутствовать цвет фона елайте отступ снизу от соседей равным</li>
         </ul>
+        <img class="image" src="Mail_logo1.png">
       </div>
       <div class="footer">
-      <p> Нижний блок, подвал. Занимает всю доступную ширину. Высота определяется помещенным внутрь контентом.</p>
+         <p> Нижний блок, подвал. Занимает всю доступную ширину. Высота определяется помещенным внутрь контентом.</p>
+      </div>
     </div>
   </body>
 </html>
